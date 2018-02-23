@@ -2,43 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basicBlogPage_HTML_White</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BlogPage_HTML_White</title>
+    <meta name="description" content="HTML Blog sample"/>
+    <meta name="keywords" content="blog,posts"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="someCssPath.css"/>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+    <sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"
+        data-sly-call="${clientLib.css @ categories='somePath'}" />
+    <header class="blog__header">
+        <h1 class="blog__maintitle">The main title</h1>
+        <nav class="blog__menu">
+            <ul class="blog__menulist">
+                <li class="blog__menulist__item">
+                    <a class="blog__menulist__link" href="somePath/randomPost.html">Random Post of the week</a>
+                </li>
+                <li class="blog__menulist__item">
+                    <a class="blog__menulist__link" href="somePath/favoritePost.html">Your Favorite Posts</a>
+                </li>
+                <li class="blog__menuListItem">
+                    <a class="blog__menulist__link" href="somePath/popularPost.html">Most Popular Posts</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <article>
-            <section></section>
-            <section></section>
+    <main class="blog__main">
+        <article class="blog__article">
+            <h2 class="blog__secondarytitle">Title introducing main content</h2>
+            <section class="blog__section">
+                <header class="blog__section__header">
+                    <h3 class="blog__section__title">Making some exercise about blogs</h3>
+                </header>
+                <p class="blog__section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, harum.</p>
+                <figure>
+                    <img class="blog__section__image" src="#" alt="Image explanation">
+                    <figcaption class="blog__section__figcaption">
+                        That day was unforgettable.
+                    </figcaption>
+                </figure>
+                <footer class="blog__section__footer">
+                    <a href="#">Show more related blog entries</a>
+                </footer>
+            </section>
+            <section class="blog__section">
+                <header class="blog__section__header">
+                    <h3 class="blog__section__title">With practice comes perfection</h3>
+                </header>
+                <p class="blog__section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, harum.</p>
+                <figure>
+                    <img class="blog__section__image" src="#" alt="Image explanation 2">
+                    <figcaption class="blog__section__figcaption">
+                       Some epic adventure that I recommend to live
+                    </figcaption>
+                </figure>
+                <footer class="blog__section__footer">
+                    <a href="#">Show more related blog entries</a>
+                </footer>
+            </section>
         </article>
-        <aside>
-
+        <aside class="blog__aside">
+            <h2 class="blog__secondarytitle">Another interest blog title</h2>
+            <article class="blog__article">
+                <header class="blog__aside__header">
+                    <h4 class="blog__aside__title">Scratching the surface</h4>
+                </header>
+                <p class="blog__aside__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, facere?</p>
+                <figure>
+                    <img class="blog__aside__image" src="#" alt="Image explanation 3">
+                    <figcaption class="blog__aside__figcaption">
+                        Showing how to do it ! 
+                    </figcaption>
+                </figure>
+                <footer class="blog__aside__footer">
+                    <a href="#">Show more related blog entries</a>
+                </footer>
+            </article>
         </aside>
     </main>
-    <footer>
-
+    <footer class="blog__footer">
+        <nav class="blog__footer__nav">
+            <ul class="blog__footer__list">
+                <li class="blog__footer__listitem">
+                    <a class="blog__footer__listlink"href="somePath/contact.html">Contact us, don't be shy!</a>
+                </li>
+                <li class="blog__footer__listitem">
+                    <a class="blog__footer__listlink"href="somePath/contributors.html">Write your own blog</a>
+                </li>
+            </ul>
+        </nav>
+        <a class="blog__footer__mail"href="mailto:sergio.lucas@netcentric.biz">sergio.lucas@netcentric.biz</a>
     </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
 </body>
 </html>
